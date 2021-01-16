@@ -1,0 +1,29 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Attic",
+  "short_name": "Attic",
+  "scope": "/attic-11/",
+  "display": "standalone",
+  "start_url": "https://tam11a.github.io/attic-11/",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "description": "A couple messenger app",
+  "orientation": "portrait",
+  "related_applications": [],
+  "prefer_related_applications": "false",
+  "icons": [
+    {
+      "src": "images/android-chrome-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "url": "https://tam11a.github.io/attic-11/",
+  "generated": true
+}
