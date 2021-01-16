@@ -7,7 +7,7 @@
     width: 100vw;
     top: 0;
     left: 0;
-    background: url('images/splashBackground.jpg');
+    background: url('../images/splashBackground.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
