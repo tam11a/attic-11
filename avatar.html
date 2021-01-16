@@ -3,6 +3,7 @@
 <head>
   <meta charset='utf-8'>
   <title>Attic || Avatar</title>
+  <meta name="theme-color" content="#05c5ff">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="statics/css/style.css">
   <link rel="stylesheet" href="statics/css/stylemsg.css">
@@ -39,7 +40,7 @@
           // Register the service worker
           navigator.serviceWorker
               .register("pwabuilder-sw.js", {
-                  scope: "/"
+                  scope: "/attic-11/"
               })
               .then(function (reg) {
                   console.log("Service worker has been registered for scope: " + reg.scope);

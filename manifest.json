@@ -22,7 +22,13 @@
       "src": "images/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
-    }
+    },
+	{
+          "src": "images/maskable_icon_x1.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any maskable"
+        }
   ],
   "url": "https://tam11a.github.io/attic-11/",
   "generated": true
