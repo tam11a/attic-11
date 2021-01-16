@@ -41,11 +41,11 @@ header .toogle{
     transform: translateY(-50%);
     width: 30px;
     height: 30px;
-    background: url('/icons/user.png');
+    background: url('icons/user.png');
     background-size: cover;
 } 
 .screen.on header .toogle{
-    background: url('/icons/messengerLight.png');
+    background: url('icons/messengerLight.png');
     background-size: cover;
 }
 header .toogleMenu{
@@ -54,7 +54,7 @@ header .toogleMenu{
     transform: translateY(-50%);
     width: 30px;
     height: 30px;
-    background: url('/icons/sort-down.png');
+    background: url('icons/sort-down.png');
     background-size: cover;
 }
 .screen{
@@ -81,7 +81,7 @@ header .toogleMenu{
     width: 400px;
     height: 100vh;
     background: #13171d;
-    /*background: url('/images/rainy.jpg');#26292c*/
+    /*background: url('images/rainy.jpg');#26292c*/
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;

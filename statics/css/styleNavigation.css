@@ -127,7 +127,7 @@
 }
 .actvBtn{
     /*width: 100%;*/
-    background: url("/icons/power-button.png");
+    background: url("icons/power-button.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -142,7 +142,7 @@
     box-shadow: 0 0 30px #28ff02;
 }
 .notactvState{
-    background: url("/icons/power-button-off.png");
+    background: url("icons/power-button-off.png");
     background-repeat: no-repeat;
     background-size: cover;
 

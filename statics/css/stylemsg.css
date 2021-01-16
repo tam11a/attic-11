@@ -31,7 +31,7 @@ input::placeholder{
 }
 #sendBtn{
     width: 40px;
-    background: url('../../icons/send.png');
+    background: url('icons/send.png');
     background-repeat: no-repeat;
     background-size: cover;
 }

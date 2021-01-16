@@ -2,7 +2,7 @@
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background: url('/images/rose.jpg');
+    background: url('images/rose.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
