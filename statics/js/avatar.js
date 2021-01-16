@@ -23,6 +23,6 @@ const avabtn = document.querySelectorAll('.cBtn001');
 avabtn.forEach(el => el.addEventListener('click', event => {
     //console.log(event.target.id);
     setCookie("avatar", event.target.id, 200);
-    window.location.replace("/message.html");
+    window.location.replace("message.html");
 }));
 getUserInfo();
