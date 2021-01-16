@@ -7,8 +7,16 @@
   <link rel="stylesheet" href="statics/css/style.css">
   <link rel="stylesheet" href="statics/css/stylemsg.css">
   <link rel="stylesheet" href="statics/css/styleChoice.css">
+  <link rel="manifest" href="manifest.json">
+  <script src="manup.min.js"></script>
 </head>
 <body>
+  <script type="module">
+		import './pwaupdate.js';
+
+		const el = document.createElement('pwa-update');
+		document.body.appendChild(el);
+    </script>
 <section class="choiceID" id="chooseU">
     <ul id="choiceMenu">
       <li>Choose Your Avatar:</li>
@@ -23,5 +31,23 @@
 <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
 <script src="statics/js/firebaseConfig.js"></script>
 <script src="statics/js/avatar.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+          console.log("An active service worker found, no need to register");
+      } else {
+          // Register the service worker
+          navigator.serviceWorker
+              .register("pwabuilder-sw.js", {
+                  scope: "/"
+              })
+              .then(function (reg) {
+                  console.log("Service worker has been registered for scope: " + reg.scope);
+              });
+      }
+  }
+
+</script>
+
 </body>
 </html>

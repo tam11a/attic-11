@@ -8,8 +8,16 @@
   <link rel="stylesheet" href="statics/css/stylemsg.css">
   <link rel="stylesheet" href="statics/css/styleNavigation.css">
   <link rel="stylesheet" href="statics/css/styleLoading.css">
+  <link rel="manifest" href="manifest.json">
+    <script src="manup.min.js"></script>
 </head>
 <body>
+  <script type="module">
+		import './pwaupdate.js';
+
+		const el = document.createElement('pwa-update');
+		document.body.appendChild(el);
+    </script>
     <!-- Message Box -->
   <section class="screen" id="play">
     <header>
@@ -130,6 +138,22 @@
     <script src="statics/js/m2.js"></script>
     <script src="statics/js/m3.js"></script>
     <script src="statics/js/m4.js"></script>
-    
+    <script>
+      if ("serviceWorker" in navigator) {
+          if (navigator.serviceWorker.controller) {
+              console.log("An active service worker found, no need to register");
+          } else {
+              // Register the service worker
+              navigator.serviceWorker
+                  .register("pwabuilder-sw.js", {
+                      scope: "/"
+                  })
+                  .then(function (reg) {
+                      console.log("Service worker has been registered for scope: " + reg.scope);
+                  });
+          }
+      }
+
+  </script>
 </body>
 </html>
