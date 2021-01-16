@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Attic || Inbox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="statics/css/style.css">
+  <link rel="stylesheet" href="statics/css/stylemsg.css">
+  <link rel="stylesheet" href="statics/css/styleNavigation.css">
+  <link rel="stylesheet" href="statics/css/styleLoading.css">
+</head>
+<body>
+    <!-- Message Box -->
+  <section class="screen" id="play">
+    <header>
+      <div class="thread_name"></div>
+      <div class="toogle" id="toggleXtrm" onclick="toggleNav()"></div>
+      <div class="toogleMenu offScr" id="toggleDown" onclick="toggleDown()"></div>
+    </header> 
+    <div class="showBox" id="wannaHide" style="padding: 40px 10px;">
+      <div class="dot"></div>
+        <ul id="messages">   
+        </ul>
+      </div>
+      <table class='sendBox' id="wannaHideToo">
+        <tr>
+          <td><input id="messageBox" type="text" placeholder="Your Message.." autocomplete="off" autofocus></td>
+          <td id="sendBtn" onclick="sendMessage()"></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section id="nickname_nav" class="scrollable">
+    
+    <div class="nick_per offScr" id="nicknameTab">
+      <div class="nName nNameShow"></div>
+      <input type="text" class="nickname nicknameShowf" id="nNickShow_" placeholder="">
+      <ul class="nickSub">
+        <li class="nickbtn">clear</li> 
+        <li class="nickbtn">save</li>
+      </ul>    
+    </div>
+
+    <div class="nick_per offScr" id="profileTab">
+        <ul class="proSub">
+            <li>Username</li>
+            <li><input type="text" placeholder="" id="updateusername"></li>
+            <li class="probtn" onclick="updateUsername()">change</li>
+        </ul>
+      </div>
+      <div class="nick_per offScr" id="accntTab">
+        <ul class="proSub">
+            <li>Room Name</li>
+            <li><input type="text" placeholder="" id="updateroomname" class="roomName"></li>
+            <li class="probtn" onclick="uploadroomname()">change</li>
+        </ul>
+      </div>
+  
+    <div class="nick_per offScr" id="actvTab">
+      <ul class="actvSub">
+        <li class="actvBtn notactvState" id="actvOnOff"></li>
+        <!--<li class="btnS" id="actvS">Off</li>-->
+        <li>Click to Change</li>
+      </ul>
+    </div>
+
+    <div class="nick_per offScr" id="darkTab">
+      <ul class="actvSub">
+        <li class="actvBtn" id="darkOnOff"></li>
+      <!--  <li class="btnS" id="darkS">On</li> -->
+        <li>Click to Change</li>
+      </ul>
+    </div>
+
+    <div class="nick_per offScr" id="notifyTab">
+      <ul class="actvSub">
+        <li class="actvBtn" id="notifyOnOff"></li>
+      <!--  <li class="btnS" id="darkS">On</li> -->
+        <li>Click to Change</li>
+      </ul>
+    </div>
+
+    <div class="containerR offScr" id="rprtTechTab">
+      <ul class="actvSub" style="text-align: left;">
+        <li style="margin-top: 100px;">From: <span id="reportFrom" class="righttxt"> <span id="self_uid"></span> | <span class="roomName"></span></span></li>
+        <li style="margin-top: 20px;">To: <span class="righttxt">Team Attic</span></li>
+        <li><textarea id="reportbox" cols="30" rows="10" placeholder="Report any problem.."></textarea></li>
+        <li id="rprtbtn">Report</li>
+      </ul>
+    </div>
+
+    
+    <div class="nick_per offScr" id="logoutTab">
+      <div class="logLoad"></div>
+    </div>
+
+  </section>
+  <div id="navigation" class="">
+    <ul id="navUL">
+      <li id="displayFront">
+        <ul class="ProfileShow">
+          <li id="DP"></li>
+          <li id="Username" class="nNameShow"></li>
+        </ul>
+      </li>
+      <li><a><button class="btn _5pxTop" style="margin-top: 20px;">nickname</button></a></li>
+      <li><a><button class="btn">profile</button></a></li>
+      <!-- <li><a><button class="btn">active status</button></a></li>
+      <li><a><button class="btn">dark mode</button></a></li>
+      <li><a><button class="btn">notifications</button></a></li> -->
+      <li><a><button class="btn">account settings</button></a></li>
+      <li><a><button class="btn">report technical issues</button></a></li>
+      <!-- <li><a><button class="btn">help</button></a></li>
+      <li><a><button class="btn">legal & policies</button></a></li> -->
+      <li><a><button class="btn" onclick="switchaccount()">switch account</button></a></li>
+      <li><a><button class="btn" onclick="logout()">logout</button></a></li>
+    </ul>
+    <p id="navFooter">Attic &copy; 2021</p>
+  </div>
+    <script src="statics/js/globals.js"></script>
+    <script src="statics/js/cookie.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
+    <script src="statics/js/firebaseConfig.js"></script>
+    <script src="statics/js/m0.js"></script>
+    <script src="statics/js/log1.js"></script>
+    <script src="statics/js/m1.js"></script>
+    <script src="statics/js/m2.js"></script>
+    <script src="statics/js/m3.js"></script>
+    <script src="statics/js/m4.js"></script>
+    
+</body>
+</html>

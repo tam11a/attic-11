@@ -1,0 +1,26 @@
+.logLoad {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 50%;
+    border: none;
+    border: 10px dotted #05c5ffd2;
+    border-top: 8px dotted #05c5ffd2;
+    border-bottom: 10px dotted transparent;
+    border-left: 2px dotted transparent;
+    border-right: 16px dotted #05c5ffd2;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg); }
+100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}

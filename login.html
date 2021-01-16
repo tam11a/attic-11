@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Attic || Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="statics/css/style.css">
+  <link rel="stylesheet" href="statics/css/stylemsg.css">
+  <link rel="stylesheet" href="statics/css/style_splashScreen.css">
+  <style>
+    .wrongSubmit{
+      border: none;
+      outline: none;
+      border-bottom: #f00 2px solid;
+      color: #f00;
+    }
+    .wrongSubmit::placeholder{
+      color: #f00;
+    }
+  </style>
+  
+</head>
+<body>
+    <!-- Login Splash -->
+    <section class="splashScr" id="splash">
+      <table class="containerXD logReg">
+        <tr>
+          <td><input class="lgBox" type="email" name="Username" id="username0" placeholder="Room Email" autocomplete="off"
+              autofocus required></td>
+        </tr>
+        <tr>
+          <td><input class="lgBox" type="password" name="Password" id="password0" placeholder="Password"
+              autocomplete="off" required></td>
+        </tr>
+        <tr>
+          <td><input class="lgBtn" type="button" value="Login" onclick="signInUser()"></td>
+        </tr>
+        <tr>
+          <td align="center" onclick="loginOrRegister()">Create a room.</td>
+        </tr>
+      </table>
+  
+      <table class="containerXD logReg offScr">
+        <tr>
+          <td><input class="lgBox" type="text" name="Username" id="username1" placeholder="Chatroom name" autocomplete="off"
+              autofocus required></td>
+        </tr>
+        <tr>
+          <td><input class="lgBox" type="email" name="mail" id="email1" placeholder="Email [Use an Email for a Room]" autocomplete="off"
+              required></td>
+        </tr>
+        <tr>
+          <td><input class="lgBox" type="password" name="Password" id="password1" placeholder="Password"
+              autocomplete="off" required></td>
+        </tr>
+        <tr>
+          <td><input class="lgBox" type="password" name="CPassword" id="cpassword1" placeholder="Confirm Password" required></td>
+        </tr>
+        <tr>
+          <td><input class="lgBtn" type="button" value="Register" onclick="registerUser()"></td>
+        </tr>
+        <tr>
+          <td align="center" onclick="loginOrRegister()">I have a room.</td>
+        </tr>
+      </table>
+
+      <table class="containerXD confirmation logReg offScr">
+        <tr>
+          <td id="RoomCon">Room Name</td>          
+        </tr>
+        <tr>
+          <td>is Created <span style="color: #0f0;">Successfully.</span></td>
+        </tr>
+        <tr>
+          <td><input class="lgBtn" type="button" value="Continue" onclick="afterRegLogin()"></td>
+        </tr>
+        <tr>
+          <td onclick="toLogin()">Login to Another Room</td>
+        </tr>
+      </table>
+    </section>
+    <script src="statics/js/globals.js"></script>
+    <script src="statics/js/cookie.js"></script>
+    <script src="statics/js/toggleLog.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
+    <script src="statics/js/firebaseConfig.js"></script>
+    <script src="statics/js/log0.js"></script>
+</body>
+</html>
