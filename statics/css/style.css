@@ -142,6 +142,7 @@ header .toogleMenu{
 }
 .ProfileShow{
     list-style: none;
+    padding-left: 100px;
 }
 #DP{
     position: relative;
@@ -211,6 +212,9 @@ header .toogleMenu{
     }
 .centerAlign{
     margin-left: 150px;
+}
+.ProfileShow{
+    padding-left: 0;
 }
 }
 @media (max-width: 470px){
