@@ -10,6 +10,7 @@
   "theme_color": "#000000",
   "description": "A couple messenger app",
   "orientation": "portrait",
+  "categories": ["social"],
   "related_applications": [],
   "prefer_related_applications": "false",
   "icons": [

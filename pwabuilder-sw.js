@@ -1,6 +1,6 @@
 // This is the service worker with the Cache-first network
 
-const CACHE = "attic-11v0.2";
+const CACHE = "attic-11v0.3";
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
