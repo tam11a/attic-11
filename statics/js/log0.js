@@ -48,7 +48,7 @@ function signIn(email, password){
       //console.log(user);
       _key = user.user.uid;
       setCookie("uid", _key, 600);
-      window.location.replace("/avatar.html");
+      window.location.replace("avatar.html");
     })
     .catch((error) => {
       var errorCode = error.code;
