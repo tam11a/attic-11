@@ -16,6 +16,8 @@ function messagesFormat(text){
     message_object = {
         "author_id": self_uid,
         "text": text,
+        "delivered_to": [self_uid],
+        "seen_by": [self_uid],
         "timestamp": Date.now() /1000 |0
     }
     return message_object;
