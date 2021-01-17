@@ -1,5 +1,5 @@
 // Message Design
-function inboxShajai(username, message, isOwn=true, mid){
+function inboxShajai(username, message, isOwn=true, notify=true, mid){
     var li = document.createElement("li");
     li.id = "$mid"+mid;
     var para = document.createElement("div");
@@ -8,6 +8,8 @@ function inboxShajai(username, message, isOwn=true, mid){
         temp += ' user';
     //else
     //    notify();
+    else if(!notify)
+        notifyNow();
     para.className = temp;
     var uname = document.createElement("div");
     uname.className = 'username';
@@ -38,7 +40,7 @@ function playSound(url) {
     audio.play();
 }
 
-function notify(){
+function notifyNow(){
     //playSound("/audios/notification.mp3");
     playSound("https://static.xx.fbcdn.net/rsrc.php/yy/r/XFhtdTsftOC.ogg?_nc_eui2=AeE6Uv0rdePARnYEly5LJLyEBAX_Mt59UMcEBf8y3n1Qx3NlEYovfs9z9Ao2gp0_-B6ZswCQtfcyq9vpMUn3l9LG");
 }
