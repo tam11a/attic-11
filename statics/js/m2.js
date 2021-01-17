@@ -62,7 +62,7 @@ database.ref(_key+"/-messages").on("child_added", function (snapshot) {
     inboxShajai(user_details[message_object.author_id]["nickname"], message_object.text, message_object.author_id == self_uid, (message_object.delivered_to.includes(self_uid)), snapshot.key);
     if(!message_object.delivered_to.includes(self_uid))
         {
-            message_object.delivered_to.append(self_uid);
+            message_object.delivered_to.push(self_uid);
             database.ref(_key+"/-messages/"+snapshot.key).update(message_object);
         }
     //inboxShajai(snapshot.key, message_object.text, message_object.author_id == self_uid);
